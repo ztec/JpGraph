@@ -185,13 +185,13 @@ class CCBPGraph {
 		$graph->yaxis->SetWeight(1);
 		
 		$ytitle = new Text(CCBPGraph::YTitle,floor($lm*.75),($height-$tm-$bm)/2+$tm);
-		$ytitle->SetFont(FF_VERA,FS_BOLD,$labelsize+1);
+		#$ytitle->SetFont(FF_VERA,FS_BOLD,$labelsize+1);
 		$ytitle->SetAlign('right','center');
 		$ytitle->SetAngle(90);
 		$graph->Add($ytitle);
 		
 		$xtitle = new Text(CCBPGraph::XTitle,($width-$lm-$rm)/2+$lm,$height - 10);
-		$xtitle->SetFont(FF_VERA,FS_BOLD,$labelsize);
+		#$xtitle->SetFont(FF_VERA,FS_BOLD,$labelsize);
 		$xtitle->SetAlign('center','bottom');
 		$graph->Add($xtitle);
 		
@@ -202,7 +202,7 @@ class CCBPGraph {
 		
 		$time = new Text(date($df),$width-10,$height-10);
 		$time->SetAlign('right','bottom');
-		$time->SetFont(FF_VERA,FS_NORMAL,$labelsize-1);
+		#$time->SetFont(FF_VERA,FS_NORMAL,$labelsize-1);
 		$time->SetColor('darkgray');
 		$graph->Add($time);
 
