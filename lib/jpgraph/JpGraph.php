@@ -3,8 +3,8 @@ namespace JpGraph ;
 
 class JpGraph {
 
-    static private $loaded = false ;
-    static private $modules = array();
+    static  $loaded = false ;
+    static  $modules = array();
 
     static function load(){
         if(self::$loaded !== true){
