@@ -1,0 +1,19 @@
+{
+    "name": "JpGraph/JpGraph",
+    "type": "library",
+    "description": "jpGraph, library to make graphs and charts",
+    "keywords": ["graph","chart","pie","jpgraph","data"],
+    "homepage": "http://jpgraph.net/",
+    "license": "QPL 1.0",
+    "authors": [
+        {
+            "name": "JpGraph team"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-0" : {
+            "JpGraph" : "lib/"
+        }
+    }
+}
