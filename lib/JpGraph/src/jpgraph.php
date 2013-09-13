@@ -3164,7 +3164,7 @@ class Graph {
 // Description: Holds properties for a line
 //===================================================
 class LineProperty {
-    public $iWeight=1, $iColor='black', $iStyle='solid', $iShow=false;
+    public $iWeight=1, $iColor='black', $iStyle='solid', $iShow=true;
 
     function __construct($aWeight=1,$aColor='black',$aStyle='solid') {
         $this->iWeight = $aWeight;
