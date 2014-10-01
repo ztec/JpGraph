@@ -1,7 +1,9 @@
 <?php
 namespace JpGraph ;
 
-class JpGraph {
+use Symfony\Component\HttpKernel\Bundle\Bundle;
+
+class JpGraph extends Bundle {
 
     static  $loaded = false ;
     static  $modules = array();
