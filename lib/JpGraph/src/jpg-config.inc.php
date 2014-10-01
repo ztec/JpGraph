@@ -135,4 +135,14 @@ define('DEFAULT_THEME_CLASS', 'UniversalTheme');
 define('SUPERSAMPLING', true);
 define('SUPERSAMPLING_SCALE', 1);
 
+//Fix for error -> The function imageantialias() is not available in your PHP installation. Use the GD version that comes with PHP and not the standalone version.
+if(!function_exists('imageantialias'))
+{
+	function imageantialias($image, $enabled)
+	{
+		return false;
+	}
+}
+
 ?>
+
