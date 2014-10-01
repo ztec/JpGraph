@@ -144,5 +144,3 @@ if(!function_exists('imageantialias'))
 	}
 }
 
-?>
-
