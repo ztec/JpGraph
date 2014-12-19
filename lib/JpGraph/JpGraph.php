@@ -18,6 +18,7 @@ class JpGraph {
             $path = __DIR__.'/src/jpgraph_'.$moduleName.'.php' ;
             if(file_exists($path)){
                 include_once $path ;
+                self::$modules[] = $moduleName;
             }else{
                 throw new ModuleNotFoundException('The JpGraphs\'s module "'.$moduleName.'" does not exist');
             }
