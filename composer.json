@@ -10,7 +10,10 @@
             "name": "JpGraph team"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "~5.1",
+        "ext-gd": "*"
+    },
     "autoload": {
         "psr-0" : {
             "JpGraph" : "lib/"
