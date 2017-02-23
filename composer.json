@@ -12,8 +12,6 @@
     ],
     "require": {},
     "autoload": {
-        "psr-0" : {
-            "JpGraph" : "lib/"
-        }
+        "classmap": ["lib/JpGraph.php"]
     }
 }
