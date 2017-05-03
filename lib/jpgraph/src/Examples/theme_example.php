@@ -18,9 +18,6 @@ $graph->title->Set("Theme Example");                    // add title
 // add barplot
 $bplot = new BarPlot($data1y);
 $graph->Add($bplot);
-
-// you can change properties of the plot only after calling Add()
-$bplot->SetWeight(0);
-$bplot->SetFillGradient('#FFAAAA:0.7', '#FFAAAA:1.2', GRAD_VER);    
+$graph->SetColor('#cc1111');    // you can change color only after calling Add()
 
 $graph->Stroke();
