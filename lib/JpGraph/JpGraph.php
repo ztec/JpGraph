@@ -1,18 +1,20 @@
 <?php
-namespace JpGraph ;
+namespace JpGraph;
 
-class JpGraph {
+class JpGraph 
+{
 
-    static  $loaded = false ;
-    static  $modules = array();
+    static public $loaded = false ;
+    static public $modules = array();
 
-    static function load(){
+    static public function load(){
         if(self::$loaded !== true){
             include_once __DIR__.'/src/jpgraph.php';
             self::$loaded = true ;
         }
     }
-    static function module($moduleName){
+    
+    static public function module($moduleName){
         self::load();
         if(!in_array($moduleName,self::$modules)){
             $path = __DIR__.'/src/jpgraph_'.$moduleName.'.php' ;
@@ -25,4 +27,3 @@ class JpGraph {
     }
 }
 
-?>
