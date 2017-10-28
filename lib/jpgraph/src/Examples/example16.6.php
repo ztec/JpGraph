@@ -20,6 +20,7 @@ list( $xd, $yd ) = $lr->GetY(0,19);
 
 // Create the graph
 $graph = new Graph(300,250);
+$graph->clearTheme();
 $graph->SetScale('linlin');
 
 // Setup title
@@ -55,5 +56,3 @@ $graph->Add($lplot);
 $graph->Stroke();
 
 ?>
-
-

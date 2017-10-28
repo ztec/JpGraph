@@ -22,6 +22,7 @@ for($i=0; $i<$numpoints; ++$i) {
 
 // Setup the basic parameters for the graph
 $graph = new Graph(500,250);
+$graph->clearTheme();
 $graph->SetScale("intlin");
 
 $graph->SetShadow();

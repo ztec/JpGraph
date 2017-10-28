@@ -11,6 +11,7 @@ for($i=0; $i<$steps; ++$i) {
 }
 
 $graph = new Graph(350,230);
+$graph->clearTheme();
 $graph->SetScale('linlin');
 $graph->SetShadow();
 $graph->SetAxisStyle(AXSTYLE_BOXIN);
@@ -41,5 +42,3 @@ $graph->Add($sp1);
 $graph->Stroke();
 
 ?>
-
-

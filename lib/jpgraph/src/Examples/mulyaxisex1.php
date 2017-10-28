@@ -12,6 +12,7 @@ for($i=0; $i < $n; ++$i ) {
 
 // Setup the graph
 $graph = new Graph(450,250);
+$graph->clearTheme();
 $graph->SetMargin(40,150,40,30);
 $graph->SetMarginColor('white');
 
@@ -44,5 +45,3 @@ $graph->ynaxis[2]->SetColor('blue');
 // Output line
 $graph->Stroke();
 ?>
-
-

@@ -5,6 +5,7 @@ require_once ('jpgraph/jpgraph_line.php');
 
 // create the graph
 $graph= new Graph(400,250);
+$graph->clearTheme();
 
 $ydata = array(5,10,15,20,15,10);
 

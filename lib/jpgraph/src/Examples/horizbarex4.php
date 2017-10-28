@@ -11,6 +11,7 @@ $height=500;
 
 // Set the basic parameters of the graph
 $graph = new Graph($width,$height);
+$graph->clearTheme();
 $graph->SetScale('textlin');
 
 $top = 60;

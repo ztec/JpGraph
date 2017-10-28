@@ -11,6 +11,7 @@ $height=500;
 
 // Set the basic parameters of the graph
 $graph = new Graph($width,$height,'auto');
+$graph->clearTheme();
 $graph->SetScale('textlin');
 
 // Rotate graph 90 degrees and set margin

@@ -8,6 +8,7 @@ $datay3 = array(5,17,32,24);
 
 // Setup the graph
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetMarginColor('white');
 $graph->SetScale("textlin");
 $graph->SetFrame(false);
@@ -47,5 +48,3 @@ $graph->legend->SetPos(0.1,0.1,'right','top');
 $graph->Stroke();
 
 ?>
-
-

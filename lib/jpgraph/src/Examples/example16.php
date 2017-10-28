@@ -6,7 +6,8 @@ require_once ('jpgraph/jpgraph_error.php');
 $errdatay = array(11,9,2,4,19,26,13,19,7,12);
 
 // Create the graph. These two calls are always required
-$graph = new Graph(300,200);	
+$graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 
 $graph->img->SetMargin(40,30,20,40);

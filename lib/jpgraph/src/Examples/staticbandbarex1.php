@@ -4,8 +4,9 @@ require_once ('jpgraph/jpgraph_bar.php');
 
 $datay=array(12,0,-19,-7,17,-6);
 
-// Create the graph. 
-$graph = new Graph(400,300);	
+// Create the graph.
+$graph = new Graph(400,300);
+$graph->clearTheme();
 $graph->img->SetMargin(60,30,50,40);
 $graph->SetScale("textlin");
 $graph->SetShadow();
@@ -17,7 +18,7 @@ $graph->subtitle->Set("(Department X)");
 // Show both X and Y grid
 $graph->xgrid->Show(true,false);
 
-// Add 10% grace ("space") at top and botton of Y-scale. 
+// Add 10% grace ("space") at top and botton of Y-scale.
 $graph->yscale->SetGrace(10,10);
 
 // Turn the tick mark out from the plot area

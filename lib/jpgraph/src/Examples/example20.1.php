@@ -5,7 +5,8 @@ require_once ('jpgraph/jpgraph_bar.php');
 $datay=array(12,8,19,3,10,5);
 
 // Create the graph. These two calls are always required
-$graph = new Graph(300,200);	
+$graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 
 // Add a drop shadow

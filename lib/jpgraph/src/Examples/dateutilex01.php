@@ -11,6 +11,7 @@ $dateUtils = new DateScaleUtils();
 // Setup a basic graph
 $width=500; $height=300;
 $graph = new Graph($width, $height);
+$graph->clearTheme();
 
 // We set the x-scale min/max values to avoid empty space
 // on the side of the plot

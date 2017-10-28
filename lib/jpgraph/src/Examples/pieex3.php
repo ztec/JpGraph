@@ -7,6 +7,7 @@ $data = array(40,21,17,14,23);
 
 // Create the Pie Graph.
 $graph = new PieGraph(350,300);
+$graph->clearTheme();
 $graph->SetShadow();
 
 // Set A title for the plot
@@ -48,6 +49,3 @@ $graph->Add($p4);
 $graph->Stroke();
 
 ?>
-
-
-

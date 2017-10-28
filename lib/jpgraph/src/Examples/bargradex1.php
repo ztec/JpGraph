@@ -9,6 +9,7 @@ $datax=array("January","February","March","April","May","June");
 
 // Setup the graph.
 $graph = new Graph(400,240);
+$graph->clearTheme();
 $graph->img->SetMargin(60,20,35,75);
 $graph->SetScale("textlin");
 $graph->SetMarginColor("lightblue:1.1");

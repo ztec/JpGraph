@@ -30,6 +30,7 @@ $xdata[$i] = $start + $i * SAMPLERATE;
 
 // Setup the Wind direction graph
 $graph = new Graph(300,800);
+$graph->clearTheme();
 $graph->SetMarginColor('lightgray:1.7');
 $graph->SetScale('datlin',0,360);
 $graph->Set90AndMargin(50,30,60,30);
@@ -57,6 +58,7 @@ $graph->Add($line);
 
 // Setup the wind speed graph
 $graph2 = new Graph(300,800);
+$graph2->clearTheme();
 $graph2->SetScale('datlin');
 $graph2->Set90AndMargin(50,30,60,30);
 $graph2->SetMarginColor('lightgray:1.7');

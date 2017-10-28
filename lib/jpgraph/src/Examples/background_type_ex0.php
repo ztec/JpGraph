@@ -7,6 +7,7 @@ $ydata = array(11,3,8,12,5,1,9,13,5,7);
 
 // Create the graph. These two calls are always required
 $graph = new Graph(350,250);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 $graph->SetMargin(40,40,50,50);
 

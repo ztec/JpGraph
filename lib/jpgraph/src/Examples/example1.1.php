@@ -1,11 +1,12 @@
 <?php // content="text/plain; charset=utf-8"
 require_once ('jpgraph/jpgraph.php');
 require_once ('jpgraph/jpgraph_line.php');
- 
+
 $ydata = array(11,11,11);
 
-// Create the graph. 
-$graph = new Graph(350,250);	
+// Create the graph.
+$graph = new Graph(350,250);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 $graph->img->SetMargin(30,90,40,50);
 $graph->xaxis->SetFont(FF_FONT1,FS_BOLD);

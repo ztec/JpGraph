@@ -6,7 +6,8 @@ $ydata = array(11,3,8,12,5,1,9,13,5,7);
 $y2data = array(354,200,265,99,111,91,198,225,293,251);
 
 // Create the graph. These two calls are always required
-$graph = new Graph(300,200);	
+$graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->img->SetMargin(40,40,20,40);
 $graph->SetScale("textlin");
 $graph->SetY2Scale("lin");

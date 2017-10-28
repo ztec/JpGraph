@@ -13,6 +13,7 @@ $datay = array(
 
 // Setup a simple graph
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale('textlin');
 $graph->SetMarginColor('lightblue');
 $graph->title->Set('Box Stock chart example');

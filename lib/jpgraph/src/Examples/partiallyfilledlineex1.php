@@ -8,6 +8,7 @@ $ydata = array(5,10,15,20,15,10,8,7,4,10,5);
 
 // Create the graph
 $graph= new Graph(400,300);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 $graph->SetShadow(true);
 $graph->SetMarginColor("lightblue");

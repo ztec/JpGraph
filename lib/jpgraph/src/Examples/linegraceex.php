@@ -5,7 +5,8 @@ require_once ('jpgraph/jpgraph_line.php');
 $datay = array(0.2980,0.3039,0.3020,0.3027,0.3015);
 
 $graph = new Graph(300,200);
-$graph->img->SetMargin(40,40,40,40);	
+$graph->clearTheme();
+$graph->img->SetMargin(40,40,40,40);
 
 $graph->img->SetAntiAliasing();
 $graph->SetScale("textlin");
@@ -27,5 +28,3 @@ $graph->Add($p1);
 $graph->Stroke();
 
 ?>
-
-

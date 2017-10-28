@@ -7,6 +7,7 @@ $datay2 = array(12,9,42,8,20,19);
 
 // Setup the graph
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetMarginColor('white');
 $graph->SetScale("textlin",0,50);
 $graph->SetMargin(30,50,30,30);
@@ -62,5 +63,3 @@ $graph->Add($p2);
 $graph->Stroke();
 
 ?>
-
-

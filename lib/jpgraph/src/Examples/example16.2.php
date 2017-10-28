@@ -7,8 +7,9 @@ $l1datay = array(11,9,2,4,3,13,17);
 $l2datay = array(23,12,5,19,17,10,15);
 $datax=array("Jan","Feb","Mar","Apr","May");
 
-// Create the graph. 
-$graph = new Graph(400,200);	
+// Create the graph.
+$graph = new Graph(400,200);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 
 $graph->img->SetMargin(40,130,20,40);

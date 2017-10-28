@@ -11,7 +11,7 @@ require_once ('jpgraph/jpgraph_bar.php');
 $month=array(
 "Jan","Feb","Mar","Apr","Maj","Jun","Jul","Aug","Sep","Okt","Nov","Dec");
 
-// Create some datapoints 
+// Create some datapoints
 $steps=100;
 for($i=0; $i<$steps; ++$i) {
 	$databarx[]=sprintf("198%d %s",floor($i/12),$month[$i%12]);
@@ -26,6 +26,7 @@ for($i=0; $i<$steps; ++$i) {
 
 // New graph with a background image and drop shadow
 $graph = new Graph(450,300);
+$graph->clearTheme();
 $graph->SetBackgroundImage("tiger_bkg.png",BGIMG_FILLFRAME);
 $graph->SetShadow();
 
@@ -48,7 +49,7 @@ $graph->subtitle->Set("100 data points, X-Scale: 'text'");
 $graph->title->SetFont(FF_FONT1,FS_BOLD);
 
 // Make the margin around the plot a little bit bigger then default
-$graph->img->SetMargin(40,140,40,80);	
+$graph->img->SetMargin(40,140,40,80);
 
 // Slightly adjust the legend from it's default position in the
 // top right corner to middle right side
@@ -86,5 +87,3 @@ $graph->AddY2($b1);
 $graph->Stroke();
 
 ?>
-
-

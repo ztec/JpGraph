@@ -10,9 +10,10 @@ for( $i=0; $i<25; ++$i) {
 	$databary[]=rand(1,50);
 	$databarx[]=$months[$i%12];
 }
-	
+
 // New graph with a drop shadow
 $graph = new Graph(300,200,'auto');
+$graph->clearTheme();
 $graph->SetShadow();
 
 // Use a "text" X-scale
@@ -41,5 +42,3 @@ $graph->Add($b1);
 $graph->Stroke();
 
 ?>
-
-

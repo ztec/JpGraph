@@ -7,11 +7,12 @@ $datax=array("320x240","640x480","600x800","1024x768","1280x1024(16)","1280x1024
 	     "1600x1200(32)");
 
 // Size of graph
-$width=300; 
+$width=300;
 $height=400;
 
-// Set the basic parameters of the graph 
+// Set the basic parameters of the graph
 $graph = new Graph($width,$height,'auto');
+$graph->clearTheme();
 $graph->SetScale("textlin");
 
 // No frame around the image

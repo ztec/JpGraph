@@ -6,7 +6,8 @@ $datay = array(20,10,35,5,17,35,22);
 
 // Setup the graph
 $graph = new Graph(400,200);
-$graph->SetMargin(40,40,20,30);	
+$graph->clearTheme();
+$graph->SetMargin(40,40,20,30);
 $graph->SetScale("intlin");
 $graph->SetBox();
 $graph->SetMarginColor('darkgreen@0.8');
@@ -26,5 +27,3 @@ $graph->Add($p1);
 $graph->Stroke();
 
 ?>
-
-

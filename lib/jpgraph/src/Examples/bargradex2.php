@@ -1,5 +1,5 @@
 <?php // content="text/plain; charset=utf-8"
-// Example for use of JpGraph, 
+// Example for use of JpGraph,
 // ljp, 01/03/01 20:32
 require_once ('jpgraph/jpgraph.php');
 require_once ('jpgraph/jpgraph_bar.php');
@@ -8,8 +8,9 @@ require_once ('jpgraph/jpgraph_bar.php');
 $datay=array(-0.13,0.25,-0.21,0.35,0.31,0.04);
 $datax=array("Jan","Feb","Mar","Apr","May","June");
 
-// Setup the graph. 
-$graph = new Graph(400,200);	
+// Setup the graph.
+$graph = new Graph(400,200);
+$graph->clearTheme();
 $graph->img->SetMargin(60,20,30,50);
 $graph->SetScale("textlin");
 $graph->SetMarginColor("silver");
@@ -36,7 +37,7 @@ $graph->xaxis->SetLabelAngle(50);
 $bplot = new BarPlot($datay);
 $bplot->SetWidth(0.6);
 
-// Setup color for gradient fill style 
+// Setup color for gradient fill style
 $bplot->SetFillGradient("navy","steelblue",GRAD_MIDVER);
 
 // Set color for the frame of each bar

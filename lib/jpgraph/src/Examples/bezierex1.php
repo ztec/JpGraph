@@ -18,6 +18,7 @@ list($newx,$newy) = $bez->Get(50);
 
 // Create the graph
 $g = new Graph(300,200);
+$g->clearTheme();
 $g->SetMargin(30,20,40,30);
 $g->title->Set("Bezier interpolation");
 $g->title->SetFont(FF_ARIAL,FS_NORMAL,12);
@@ -51,4 +52,3 @@ $g->Add($bplot);
 $g->Stroke();
 
 ?>
-

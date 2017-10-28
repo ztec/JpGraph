@@ -5,7 +5,8 @@ require_once ('jpgraph/jpgraph_line.php');
 $ydata = array(11,3,8,12,5,1,9,13,5,7);
 
 // Create the graph. These two calls are always required
-$graph = new Graph(300,250);	
+$graph = new Graph(300,250);
+$graph->clearTheme();
 $graph->SetScale('intlin',0,10);
 $graph->SetMargin(30,20,70,40);
 $graph->SetMarginColor(array(177,191,174));

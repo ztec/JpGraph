@@ -6,6 +6,7 @@ $data = array(40,60,31,35);
 
 // A new pie graph
 $graph = new PieGraph(250,200);
+$graph->clearTheme();
 $graph->SetShadow();
 
 // Title setup

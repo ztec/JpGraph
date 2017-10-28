@@ -5,8 +5,9 @@ require_once ('jpgraph/jpgraph_plotline.php');
 
 $datay=array(12,5,19,22,17,6);
 
-// Create the graph. 
-$graph = new Graph(400,300);	
+// Create the graph.
+$graph = new Graph(400,300);
+$graph->clearTheme();	
 $graph->img->SetMargin(60,30,50,40);
 $graph->SetScale("textlin");
 $graph->SetShadow();
@@ -18,7 +19,7 @@ $graph->subtitle->Set("Use of static line, 3D and solid band");
 // Turn off Y-grid (it's on by default)
 $graph->ygrid->Show(false);
 
-// Add 10% grace ("space") at top of Y-scale. 
+// Add 10% grace ("space") at top of Y-scale.
 $graph->yscale->SetGrace(10);
 $graph->yscale->SetAutoMin(-20);
 

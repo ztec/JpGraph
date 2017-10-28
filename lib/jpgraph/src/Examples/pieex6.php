@@ -7,6 +7,7 @@ $data = array(27,23,47,17);
 
 // A new graph
 $graph = new PieGraph(350,200);
+$graph->clearTheme();
 $graph->SetShadow();
 
 // Setup title
@@ -44,5 +45,3 @@ $graph->legend->Pos(0.05,0.15);
 $graph->Add($p1);
 $graph->Stroke();
 ?>
-
-
