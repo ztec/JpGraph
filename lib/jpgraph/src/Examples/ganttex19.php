@@ -7,7 +7,7 @@ $graph->SetBox();
 $graph->SetShadow();
 
 // Use default locale
-$graph->scale->SetDateLocale('sv_SE');
+$graph->scale->SetDateLocale('');
 
 // Add title and subtitle
 $graph->title->Set('Example of captions');

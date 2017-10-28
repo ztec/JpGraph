@@ -12,6 +12,7 @@ $dateUtils = new DateScaleUtils();
 // Setup a basic graph
 $width=500; $height=300;
 $graph = new Graph($width, $height);
+$graph->clearTheme();
 $graph->SetScale('datlin');
 $graph->SetMargin(60,20,40,60);
 

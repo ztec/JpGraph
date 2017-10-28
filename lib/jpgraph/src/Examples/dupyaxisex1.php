@@ -7,10 +7,11 @@ $f = new FuncGenerator('cos($i)','$i*$i*$i');
 list($xdata,$ydata) = $f->E(-M_PI,M_PI,25);
 
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale("linlin");
-$graph->SetMargin(50,50,20,30);	
+$graph->SetMargin(50,50,20,30);
 $graph->SetFrame(false);
-$graph->SetBox(true,'black',2);	
+$graph->SetBox(true,'black',2);
 $graph->SetMarginColor('white');
 $graph->SetColor('lightyellow');
 
@@ -27,5 +28,3 @@ $graph->Add($lp1);
 
 $graph->Stroke();
 ?>
-
-

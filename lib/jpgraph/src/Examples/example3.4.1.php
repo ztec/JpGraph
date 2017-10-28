@@ -45,6 +45,7 @@ $height=250;
 // Create the graph and set a scale.
 // These two calls are always required
 $graph = new Graph($width,$height);
+$graph->clearTheme();
 $graph->SetScale('intlin');
 $graph->SetShadow();
 

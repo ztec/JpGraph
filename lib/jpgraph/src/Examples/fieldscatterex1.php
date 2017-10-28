@@ -16,7 +16,7 @@ function FldCallback($x,$y,$a) {
     // Since we have different scales we need the data points
     // to be of the same magnitude to give it a distance
     // interpretation.
-    $x *= 10; 
+    $x *= 10;
 
     // Colors gets colder the further out we go from the center
     $r = ($x-$polex*10)*($x-$polex*10)+($y-$poley)*($y-$poley);
@@ -43,7 +43,7 @@ for($x=1; $x < 10; ++$x ) {
 	}
 	if( $y==$poley ) {
 	    if( $x  > $polex ) $a=0;
-	    else  $a=180;	    
+	    else  $a=180;
 	}
 	if( $a == -1 ) {
 	    $d1 = $y-$poley;
@@ -63,6 +63,7 @@ for($x=1; $x < 10; ++$x ) {
 
 // Setup the graph
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale("intlin",0,100,0,10);
 $graph->SetMarginColor('lightblue');
 
@@ -76,7 +77,7 @@ $fp = new FieldPlot($datay,$datax,$angle);
 // Setup formatting callback
 $fp->SetCallback('FldCallback');
 
-// First size argument is length (in pixels of arrow) 
+// First size argument is length (in pixels of arrow)
 // Second size argument is roughly size of arrow. Arrow size is specified as
 // an integer in the range [0,9]
 $fp->arrow->SetSize(20,2);
@@ -88,5 +89,3 @@ $graph->Add($fp);
 $graph->Stroke();
 
 ?>
-
-

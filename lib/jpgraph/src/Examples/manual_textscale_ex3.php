@@ -10,6 +10,7 @@ $months=$gDateLocale->GetShortMonth();
 
 // New graph with a drop shadow
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetShadow();
 
 // Use a "text" X-scale
@@ -36,5 +37,3 @@ $graph->Add($b1);
 $graph->Stroke();
 
 ?>
-
-

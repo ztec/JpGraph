@@ -5,11 +5,12 @@ require_once ('jpgraph/jpgraph_bar.php');
 // Some data
 $datay=array(7,19,11,4,20);
 
-// Create the graph and setup the basic parameters 
-$graph = new Graph(300,200,'auto');	
+// Create the graph and setup the basic parameters
+$graph = new Graph(300,200,'auto');
+$graph->clearTheme();
 $graph->img->SetMargin(40,30,40,50);
 $graph->SetScale("textint");
-$graph->SetFrame(true,'blue',1); 
+$graph->SetFrame(true,'blue',1);
 $graph->SetColor('lightblue');
 $graph->SetMarginColor('lightblue');
 
@@ -33,10 +34,10 @@ $graph->xaxis->SetTitleMargin(10);
 $graph->xaxis->title->SetFont(FF_FONT2,FS_BOLD);
 
 // Add some grace to the top so that the scale doesn't
-// end exactly at the max value. 
+// end exactly at the max value.
 $graph->yaxis->scale->SetGrace(100);
 
-                              
+
 // Create a bar pot
 $bplot = new BarPlot($datay);
 $bplot->SetFillColor('darkblue');

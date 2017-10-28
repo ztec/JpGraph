@@ -6,15 +6,16 @@ require_once ('jpgraph/jpgraph_bar.php');
 // Some data
 $datay=array(1,1,0.5);
 
-// Create the graph and setup the basic parameters 
-$graph = new Graph(460,200,'auto');	
+// Create the graph and setup the basic parameters
+$graph = new Graph(460,200,'auto');
+$graph->clearTheme();
 $graph->img->SetMargin(40,30,30,40);
 $graph->SetScale("textint");
 $graph->SetShadow();
 $graph->SetFrame(false); // No border around the graph
 
 // Add some grace to the top so that the scale doesn't
-// end exactly at the max value. 
+// end exactly at the max value.
 $graph->yaxis->scale->SetGrace(100);
 
 // Setup X-axis labels
@@ -27,7 +28,7 @@ $graph->title->Set("Example of integer Y-scale");
 $graph->title->SetFont(FF_FONT2,FS_BOLD);
 $graph->xaxis->title->Set("Year 2002");
 $graph->xaxis->title->SetFont(FF_FONT2,FS_BOLD);
-                              
+
 // Create a bar pot
 $bplot = new BarPlot($datay);
 $bplot->SetFillColor("orange");

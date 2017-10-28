@@ -25,9 +25,10 @@ for($i=0; $i<$n; ++$i) {
 
 // Basic graph setup
 $graph = new Graph(400,300);
+$graph->clearTheme();
 $graph->SetScale("linlin");
 $graph->SetY2Scale("lin");
-$graph->SetMargin(50,50,60,40);	
+$graph->SetMargin(50,50,60,40);
 $graph->SetMarginColor('darkblue');
 $graph->SetColor('darkblue');
 
@@ -65,5 +66,3 @@ $graph->AddY2($lp2);
 
 $graph->Stroke();
 ?>
-
-

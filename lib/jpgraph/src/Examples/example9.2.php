@@ -9,6 +9,7 @@ $datax = array("Jan","Feb","Mar","Apr","Maj","Jun","Jul","aug","Sep","Oct");
 
 // Create the graph. These two calls are always required
 $graph = new Graph(350,200);
+$graph->clearTheme();
 $graph->SetScale("textlog");
 
 $graph->img->SetMargin(40,110,20,50);

@@ -7,6 +7,7 @@ $datay1 = array(4,26,15,44);
 
 // Setup the graph
 $graph = new Graph(300,250);
+$graph->clearTheme();
 $graph->SetMarginColor('white');
 $graph->SetScale("textlin");
 $graph->SetFrame(false);
@@ -24,13 +25,13 @@ $graph->xgrid->Show();
 $graph->xaxis->SetTickLabels($gDateLocale->GetShortMonth());
 
 $graph->footer->left->Set('L. footer');
-$graph->footer->left->SetFont(FF_ARIAL,FS_NORMAL,12); 
+$graph->footer->left->SetFont(FF_ARIAL,FS_NORMAL,12);
 $graph->footer->left->SetColor('darkred');
 $graph->footer->center->Set('C. footer');
 $graph->footer->center->SetFont(FF_ARIAL,FS_BOLD,12);
 $graph->footer->center->SetColor('darkred');
 $graph->footer->right->Set('R. footer');
-$graph->footer->right->SetFont(FF_ARIAL,FS_NORMAL,12); 
+$graph->footer->right->SetFont(FF_ARIAL,FS_NORMAL,12);
 $graph->footer->right->SetColor('darkred');
 
 // Create the plot
@@ -58,5 +59,3 @@ $graph->Add($p1);
 $graph->Stroke();
 
 ?>
-
-

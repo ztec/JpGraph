@@ -5,7 +5,8 @@ require_once ('jpgraph/jpgraph_line.php');
 $ydata = array(11,3,8,12,5,1,9,15,5,7);
 
 // Create the graph. These two calls are always required
-$graph = new Graph(300,200);	
+$graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 $graph->yaxis->scale->SetGrace(10,10);
 

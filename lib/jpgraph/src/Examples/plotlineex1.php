@@ -8,6 +8,7 @@ $datay=array(2,3,5,8.5,11.5,6,3);
 
 // Create the graph.
 $graph = new Graph(460,400,'auto');
+$graph->clearTheme();
 $graph->SetScale("textlin");
 $graph->SetMargin(40,20,50,70);
 

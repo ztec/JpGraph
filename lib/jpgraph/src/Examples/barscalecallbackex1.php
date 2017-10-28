@@ -16,6 +16,7 @@ $datay=array(120567,134013,192000,87000);
 
 // Create the graph and setup the basic parameters
 $graph = new Graph(500,300,'auto');
+$graph->clearTheme();
 $graph->img->SetMargin(80,30,30,40);
 $graph->SetScale('textint');
 $graph->SetShadow();

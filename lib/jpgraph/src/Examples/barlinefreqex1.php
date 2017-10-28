@@ -1,6 +1,6 @@
 <?php // content="text/plain; charset=utf-8"
 //
-// Example of frequence bar 
+// Example of frequence bar
 //
 require_once ('jpgraph/jpgraph.php');
 require_once ('jpgraph/jpgraph_bar.php');
@@ -25,8 +25,9 @@ function accfreq($data) {
 $data_freq = array(22,20,12,10,5,4,2);
 $data_accfreq = accfreq($data_freq);
 
-// Create the graph. 
+// Create the graph.
 $graph = new Graph(350,250);
+$graph->clearTheme();
 
 // Setup some basic graph parameters
 $graph->SetScale("textlin");

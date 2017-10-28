@@ -18,8 +18,9 @@ for($i=0; $i<$n; ++$i) {
 
 // Basic graph setup
 $graph = new Graph(400,300);
+$graph->clearTheme();
 $graph->SetScale("linlin");
-$graph->img->SetMargin(50,50,60,40);	
+$graph->img->SetMargin(50,50,60,40);
 $graph->SetMarginColor('darkblue');
 $graph->SetColor('darkblue');
 $graph->SetAxisStyle(AXSTYLE_BOXOUT);
@@ -47,5 +48,3 @@ $lp1->SetWeight(2);
 $graph->Add($lp1);
 $graph->Stroke();
 ?>
-
-

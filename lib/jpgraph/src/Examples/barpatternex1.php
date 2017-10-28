@@ -6,8 +6,9 @@ require_once ('jpgraph/jpgraph_line.php');
 
 $datay=array(2,3,5,8.5,11.5,6,3);
 
-// Create the graph. 
-$graph = new Graph(350,300);	
+// Create the graph.
+$graph = new Graph(350,300);
+$graph->clearTheme();
 
 $graph->SetScale("textlin");
 

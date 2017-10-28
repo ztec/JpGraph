@@ -8,7 +8,8 @@ $datay = array(30,25,33,25,27,45,32);
 
 // Setup the graph
 $graph = new Graph(400,250);
-$graph->SetMargin(40,40,20,30);	
+$graph->clearTheme();
+$graph->SetMargin(40,40,20,30);
 $graph->SetScale("textlin");
 
 $graph->title->Set('Adding a country flag as a an icon');
@@ -28,5 +29,3 @@ $graph->Add($icon);
 $graph->Stroke();
 
 ?>
-
-

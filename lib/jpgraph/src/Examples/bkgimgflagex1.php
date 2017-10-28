@@ -10,7 +10,8 @@ $datay2=array(35,90,190);
 $datay3=array(20,60,70);
 
 // Create the basic graph
-$graph = new Graph(300,200);	
+$graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale('textlin');
 $graph->SetMargin(40,20,20,40);
 $graph->SetMarginColor('white:0.9');
@@ -76,4 +77,3 @@ $graph->Add($gbarplot);
 
 $graph->Stroke();
 ?>
-

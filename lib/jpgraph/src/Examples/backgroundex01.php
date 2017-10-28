@@ -8,7 +8,8 @@ $data2y = array(14,18,33,29,39,55);
 
 // A nice graph with anti-aliasing
 $graph = new Graph(400,200);
-$graph->img->SetMargin(40,180,40,40);	
+$graph->clearTheme();
+$graph->img->SetMargin(40,180,40,40);
 $graph->SetBackgroundImage("tiger_bkg.png",BGIMG_FILLPLOT);
 
 $graph->img->SetAntiAliasing("white");
@@ -20,7 +21,7 @@ $graph->title->Set("Background image");
 $graph->title->SetFont(FF_FONT1,FS_BOLD);
 
 // Slightly adjust the legend from it's default position in the
-// top right corner. 
+// top right corner.
 $graph->legend->Pos(0.05,0.5,"right","center");
 
 // Create the first line
@@ -47,5 +48,3 @@ $graph->Add($p2);
 $graph->Stroke();
 
 ?>
-
-

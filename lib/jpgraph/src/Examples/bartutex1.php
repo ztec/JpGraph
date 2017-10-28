@@ -7,6 +7,7 @@ $databary=array(12,7,16,5,7,14,9,3);
 
 // New graph with a drop shadow
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetShadow();
 
 // Use a "text" X-scale
@@ -31,5 +32,3 @@ $graph->Add($b1);
 $graph->Stroke();
 
 ?>
-
-

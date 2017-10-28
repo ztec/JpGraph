@@ -5,6 +5,7 @@ require_once ('jpgraph/jpgraph_pie.php');
 $data = array(40,60,21,33);
 
 $graph = new PieGraph(300,200);
+$graph->clearTheme();
 $graph->SetShadow();
 
 $graph->title->Set("A simple Pie plot");
@@ -18,5 +19,3 @@ $graph->Add($p1);
 $graph->Stroke();
 
 ?>
-
-

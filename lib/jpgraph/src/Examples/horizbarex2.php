@@ -5,11 +5,12 @@ require_once ('jpgraph/jpgraph_bar.php');
 $datay=array(2,3,5,8,12,6,3);
 $datax=array("Jan","Feb","Mar","Apr","May","Jun","Jul");
 
-$width=400; 
+$width=400;
 $height=500;
 
-// Set the basic parameters of the graph 
+// Set the basic parameters of the graph
 $graph = new Graph($width,$height,'auto');
+$graph->clearTheme();
 $graph->SetScale("textlin");
 
 $top = 80;

@@ -7,8 +7,9 @@ require_once ('jpgraph/jpgraph_bar.php');
 $datay=array(4,13,30,28,12,45,30,12,55,3,0.5);
 $datax=array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov");
 
-// Create the graph. 
-$graph = new Graph(400,220,'auto');	
+// Create the graph.
+$graph = new Graph(400,220,'auto');
+$graph->clearTheme();
 //$graph->img->SetMargin(50,30,50,50);
 $graph->SetScale("textlog");
 //$graph->SetShadow();

@@ -7,11 +7,12 @@ $data = array(113,5,160,3,15,10,1);
 
 // Create the Pie Graph.
 $graph = new PieGraph(300,200);
+$graph->clearTheme();
 $graph->SetShadow();
 
 // Set A title for the plot
 $graph->title->Set("Example 1 Pie plot");
-$graph->title->SetFont(FF_VERDANA,FS_BOLD,14); 
+$graph->title->SetFont(FF_VERDANA,FS_BOLD,14);
 $graph->title->SetColor("brown");
 
 // Create pie plot
@@ -28,5 +29,3 @@ $graph->Add($p1);
 $graph->Stroke();
 
 ?>
-
-

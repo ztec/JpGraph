@@ -34,6 +34,7 @@ DEFINE('WIND_WIDTH',280);
 
 // Setup the Wind direction graph
 $graph = new Graph(WIND_WIDTH,WIND_HEIGHT);
+$graph->clearTheme();
 $graph->SetMarginColor(BKG_COLOR);
 $graph->SetScale('datlin',0,360);
 $graph->Set90AndMargin(50,10,60,30);
@@ -63,6 +64,7 @@ $graph->Add($line);
 
 // Setup the wind speed graph
 $graph2 = new Graph(WIND_WIDTH-30,WIND_HEIGHT);
+$graph2->clearTheme();
 $graph2->SetScale('datlin');
 $graph2->Set90AndMargin(5,20,60,30);
 $graph2->SetMarginColor(BKG_COLOR);

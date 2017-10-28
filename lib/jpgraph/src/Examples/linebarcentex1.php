@@ -8,8 +8,9 @@ $l2datay = array(23,12,5,19,17,10,15);
 
 $datax=$gDateLocale->GetShortMonth();
 
-// Create the graph. 
-$graph = new Graph(400,200);	
+// Create the graph.
+$graph = new Graph(400,200);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 $graph->SetMargin(40,130,20,40);
 $graph->SetShadow();

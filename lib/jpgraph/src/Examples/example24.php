@@ -8,7 +8,8 @@ $data3y=array(3,9,2,7,5,8);
 $data4y=array(1,5,11,2,14,4);
 
 // Create the graph. These two calls are always required
-$graph = new Graph(310,200);	
+$graph = new Graph(310,200);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 
 $graph->SetShadow();

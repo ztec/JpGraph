@@ -11,10 +11,11 @@ list($x2data,$y2data) = $f->E(-2,2);
 
 // Setup the basic graph
 $graph = new Graph(450,350);
+$graph->clearTheme();
 $graph->SetScale("linlin");
 //$graph->SetShadow();
-$graph->img->SetMargin(5,10,60,9);	
-$graph->SetBox(true,'green',2);	
+$graph->img->SetMargin(5,10,60,9);
+$graph->SetBox(true,'green',2);
 $graph->SetMarginColor('black');
 $graph->SetColor('black');
 
@@ -59,5 +60,3 @@ $graph->Add($lp2);
 $graph->Stroke();
 
 ?>
-
-

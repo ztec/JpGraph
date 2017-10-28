@@ -7,7 +7,7 @@ require_once ('jpgraph/jpgraph.php');
 require_once ('jpgraph/jpgraph_line.php');
 require_once ('jpgraph/jpgraph_utils.inc.php');
 
-// 
+//
 // Create some random data for the plot. We use the current time for the
 // first X-position
 //
@@ -35,6 +35,7 @@ $xmax = $datax[$n-1];
 // The code to setup a very basic graph
 //
 $graph = new Graph(400,200);
+$graph->clearTheme();
 
 //
 // We use an integer scale on the X-axis since the positions on the X axis
@@ -68,5 +69,3 @@ $graph->Add($p1);
 $graph->Stroke();
 
 ?>
-
-

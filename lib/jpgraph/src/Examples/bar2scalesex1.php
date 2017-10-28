@@ -6,11 +6,12 @@ $datay=array(20,30,50,80);
 $datay2=array(430,645,223,690);
 $datazero=array(0,0,0,0);
 
-// Create the graph. 
+// Create the graph.
 $graph = new Graph(450,200);
+$graph->clearTheme();
 $graph->title->Set('Example with 2 scale bars');
 
-// Setup Y and Y2 scales with some "grace"	
+// Setup Y and Y2 scales with some "grace"
 $graph->SetScale("textlin");
 $graph->SetY2Scale("lin");
 $graph->yaxis->scale->SetGrace(30);

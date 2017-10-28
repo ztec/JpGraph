@@ -7,6 +7,7 @@ $y2data = array(354,200,265,99,111,91,198,225,293,251);
 
 // Create the graph and specify the scale for both Y-axis
 $graph = new Graph(400,200);
+$graph->clearTheme();
 $graph->SetScale('textlin');
 $graph->SetY2Scale('lin');
 $graph->SetShadow();

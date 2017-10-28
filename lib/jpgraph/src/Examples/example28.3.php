@@ -5,6 +5,7 @@ require_once ('jpgraph/jpgraph_pie.php');
 $data = array(40,60,21,33,12,33);
 
 $graph = new PieGraph(150,150);
+$graph->clearTheme();
 $graph->SetShadow();
 
 $graph->title->Set("'water' Theme");
@@ -18,5 +19,3 @@ $graph->Add($p1);
 $graph->Stroke();
 
 ?>
-
-

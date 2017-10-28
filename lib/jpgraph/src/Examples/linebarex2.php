@@ -17,6 +17,7 @@ for($i=0; $i<$steps; ++$i) {
 
 // New graph with a background image and drop shadow
 $graph = new Graph(450,300);
+$graph->clearTheme();
 $graph->SetBackgroundImage("tiger_bkg.png",BGIMG_FILLFRAME);
 $graph->SetShadow();
 
@@ -32,7 +33,7 @@ $graph->title->SetFont(FF_FONT1,FS_BOLD);
 
 // Make the margin around the plot a little bit bigger
 // then default
-$graph->img->SetMargin(40,120,40,40);	
+$graph->img->SetMargin(40,120,40,40);
 
 // Slightly adjust the legend from it's default position in the
 // top right corner to middle right side
@@ -55,5 +56,3 @@ $graph->Add($b1);
 $graph->Stroke();
 
 ?>
-
-

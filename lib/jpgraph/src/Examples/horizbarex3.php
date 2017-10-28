@@ -6,11 +6,12 @@ $datay=array(2,3,-5,8,12,6,3);
 $datax=array("Jan","Feb","Mar","Apr","May","Jun","Jul");
 
 // Size of graph
-$width=400; 
+$width=400;
 $height=500;
 
-// Set the basic parameters of the graph 
+// Set the basic parameters of the graph
 $graph = new Graph($width,$height,'auto');
+$graph->clearTheme();
 $graph->SetScale("textlin");
 
 $top = 50;
@@ -43,7 +44,7 @@ $graph->xaxis->SetLabelAlign('right','center');
 // all the way to the end of the plot area
 $graph->yaxis->scale->SetGrace(20);
 
-// Setup the Y-axis to be displayed in the bottom of the 
+// Setup the Y-axis to be displayed in the bottom of the
 // graph. We also finetune the exact layout of the title,
 // ticks and labels to make them look nice.
 $graph->yaxis->SetPos('max');

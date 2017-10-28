@@ -13,9 +13,10 @@ for($i=0; $i<$steps; ++$i) {
 
 
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale("linlin");
 
-$graph->img->SetMargin(40,40,40,40);		
+$graph->img->SetMargin(40,40,40,40);
 
 $graph->SetShadow();
 $graph->title->Set("Linked scatter plot");
@@ -39,5 +40,3 @@ $graph->Add($sp1);
 $graph->Stroke();
 
 ?>
-
-

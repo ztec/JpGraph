@@ -4,8 +4,9 @@ require_once ('jpgraph/jpgraph_bar.php');
 
 $datay=array(12,0,-19,-7,17,-6);
 
-// Create the graph. 
-$graph = new Graph(400,300);	
+// Create the graph.
+$graph = new Graph(400,300);
+$graph->clearTheme();	
 $graph->img->SetMargin(60,30,40,40);
 $graph->SetScale("textlin");
 $graph->SetShadow();

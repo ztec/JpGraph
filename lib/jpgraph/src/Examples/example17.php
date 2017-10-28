@@ -8,6 +8,7 @@ $datay3 = 	array(4,5,7,10,13,15,15,22,26,26,30,34,40,43,47,55,60,62);
 
 // Create the graph. These two calls are always required
 $graph = new Graph(300,200);
+$graph->clearTheme();
 $graph->SetScale("textlin");
 $graph->SetShadow();
 $graph->img->SetMargin(40,30,20,40);
