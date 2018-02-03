@@ -11,6 +11,7 @@
 require_once 'jpgraph_rgb.inc.php';
 require_once 'jpgraph_ttf.inc.php';
 require_once 'imageSmoothArc.php';
+require_once 'jpgraph_errhandler.inc.php';
 
 // Line styles
 define('LINESTYLE_SOLID',1);

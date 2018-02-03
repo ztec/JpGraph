@@ -681,7 +681,7 @@ class GroupBarPlot extends BarPlot {
     private $nbrplots=0;
     //---------------
     // CONSTRUCTOR
-    function GroupBarPlot($plots) {
+    function __construct($plots) {
         $this->width=0.7;
         $this->plots = $plots;
         $this->nbrplots = count($plots);
